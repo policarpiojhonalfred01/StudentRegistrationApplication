@@ -89,5 +89,14 @@
   <ItemGroup>
     <None Include="Resources\multicolored-noise-texture-multicolor-grainy-gradient-background-stylish-liquid-art-photo1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mceclip0%283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\96905308-beautiful-nature-4k-mobile-wallpaper %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\96d6ec2df4b7a9db99da489663a77937.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

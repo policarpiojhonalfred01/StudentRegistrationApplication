@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrayNotify;
+using System.Collections;
 
 namespace StudentRegistrationApplication
 {
@@ -30,29 +31,46 @@ namespace StudentRegistrationApplication
             string middleName = textBox3.Text;
             string gender = radioButton1.Checked ? "Male" : "Female";
             string dateOfBirth = $"{comboBox2.SelectedItem}/{comboBox1.SelectedItem}/{comboBox3.SelectedItem}";
+            string program = comboBox4.SelectedItem?.ToString() ?? "Not selected";
             string message =
                 $"Student name: {firstName} {middleName} {lastName}\n" +
-                $"Gender: {gender}\n" + $"Date of birth: {dateOfBirth}";
+                $"Gender: {gender}\n" + 
+                $"Date of birth: {dateOfBirth}\n" +
+            $"Program: {program}";
 
             MessageBox.Show(message, "Student Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void backgound_Load(object sender, EventArgs e)
         {
+            ArrayList programs = new ArrayList
+    {
+        "Bachelor of Science in Computer Science",
+        "Bachelor of Science in Information Technology",
+        "Bachelor of Science in Information Systems",
+        "Bachelor of Science in Computer Engineering"
+    };
 
-
+            foreach (string program in programs)
+            {
+                comboBox4.Items.Add(program);
+            }
 
             for (int day = 1; day <= 31; day++)
             {
                 comboBox1.Items.Add(day);
             }
 
+            // Add months using array and foreach loop
+            string[] months = {
+        "January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+    };
 
-            for (int month = 1; month <= 12; month++)
+            foreach (string month in months)
             {
                 comboBox2.Items.Add(month);
             }
-
 
             for (int year = 1900; year <= DateTime.Now.Year; year++)
             {
@@ -60,14 +78,26 @@ namespace StudentRegistrationApplication
             }
         }
 
+
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
 
-       
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
 
-        
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtMiddleName_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

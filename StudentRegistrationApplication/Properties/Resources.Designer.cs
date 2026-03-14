@@ -63,6 +63,36 @@ namespace StudentRegistrationApplication.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _96905308_beautiful_nature_4k_mobile_wallpaper__1_ {
+            get {
+                object obj = ResourceManager.GetObject("96905308-beautiful-nature-4k-mobile-wallpaper (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _96d6ec2df4b7a9db99da489663a77937 {
+            get {
+                object obj = ResourceManager.GetObject("96d6ec2df4b7a9db99da489663a77937", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mceclip0_3_ {
+            get {
+                object obj = ResourceManager.GetObject("mceclip0(3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap multicolored_noise_texture_multicolor_grainy_gradient_background_stylish_liquid_art_photo {
             get {
                 object obj = ResourceManager.GetObject("multicolored-noise-texture-multicolor-grainy-gradient-background-stylish-liquid-a" +

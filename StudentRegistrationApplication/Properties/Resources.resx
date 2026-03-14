@@ -118,13 +118,22 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="wp4390828" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wp4390828.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="multicolored-noise-texture-multicolor-grainy-gradient-background-stylish-liquid-art-photo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\multicolored-noise-texture-multicolor-grainy-gradient-background-stylish-liquid-art-photo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="multicolored-noise-texture-multicolor-grainy-gradient-background-stylish-liquid-art-photo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\multicolored-noise-texture-multicolor-grainy-gradient-background-stylish-liquid-art-photo1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wp4390828" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wp4390828.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mceclip0(3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mceclip0(3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="96905308-beautiful-nature-4k-mobile-wallpaper (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\96905308-beautiful-nature-4k-mobile-wallpaper (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="96d6ec2df4b7a9db99da489663a77937" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\96d6ec2df4b7a9db99da489663a77937.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
