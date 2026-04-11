@@ -46,7 +46,11 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtlabel1
@@ -59,6 +63,7 @@
             this.txtlabel1.Size = new System.Drawing.Size(356, 31);
             this.txtlabel1.TabIndex = 0;
             this.txtlabel1.Text = "Student Registration Form";
+            this.txtlabel1.Click += new System.EventHandler(this.txtlabel1_Click);
             // 
             // txtFirstName
             // 
@@ -70,6 +75,7 @@
             this.txtFirstName.Size = new System.Drawing.Size(96, 20);
             this.txtFirstName.TabIndex = 1;
             this.txtFirstName.Text = "First Name";
+            this.txtFirstName.Click += new System.EventHandler(this.txtFirstName_Click);
             // 
             // txtMiddleName
             // 
@@ -93,6 +99,7 @@
             this.txtLastName.Size = new System.Drawing.Size(95, 20);
             this.txtLastName.TabIndex = 3;
             this.txtLastName.Text = "Last Name";
+            this.txtLastName.Click += new System.EventHandler(this.txtLastName_Click);
             // 
             // eventLog1
             // 
@@ -110,6 +117,7 @@
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Male";
             this.radioButton1.UseVisualStyleBackColor = false;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // radioButton2
             // 
@@ -123,6 +131,7 @@
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Female";
             this.radioButton2.UseVisualStyleBackColor = false;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // txtGender
             // 
@@ -134,6 +143,7 @@
             this.txtGender.Size = new System.Drawing.Size(69, 20);
             this.txtGender.TabIndex = 6;
             this.txtGender.Text = "Gender";
+            this.txtGender.Click += new System.EventHandler(this.txtGender_Click);
             // 
             // comboBox1
             // 
@@ -162,11 +172,12 @@
             this.comboBox3.Cursor = System.Windows.Forms.Cursors.No;
             this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(340, 338);
+            this.comboBox3.Location = new System.Drawing.Point(341, 338);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(121, 28);
             this.comboBox3.TabIndex = 9;
             this.comboBox3.Text = "Year";
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -178,6 +189,7 @@
             this.label1.Size = new System.Drawing.Size(47, 20);
             this.label1.TabIndex = 10;
             this.label1.Text = "Birth";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Button1
             // 
@@ -207,6 +219,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(223, 26);
             this.textBox2.TabIndex = 13;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox3
             // 
@@ -215,6 +228,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(223, 26);
             this.textBox3.TabIndex = 14;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // comboBox4
             // 
@@ -224,6 +238,7 @@
             this.comboBox4.Size = new System.Drawing.Size(221, 21);
             this.comboBox4.TabIndex = 15;
             this.comboBox4.Text = "Select Program";
+            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -235,13 +250,39 @@
             this.label2.Size = new System.Drawing.Size(198, 25);
             this.label2.TabIndex = 16;
             this.label2.Text = "Program  to apply";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(479, 37);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(187, 169);
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(536, 229);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 18;
+            this.button2.Text = "Browse";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // backgound
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::StudentRegistrationApplication.Properties.Resources._96d6ec2df4b7a9db99da489663a77937;
-            this.ClientSize = new System.Drawing.Size(530, 671);
+            this.ClientSize = new System.Drawing.Size(726, 671);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBox4);
             this.Controls.Add(this.textBox3);
@@ -263,6 +304,7 @@
             this.Text = "SelectedItem";
             this.Load += new System.EventHandler(this.backgound_Load);
             ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -288,6 +330,9 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
