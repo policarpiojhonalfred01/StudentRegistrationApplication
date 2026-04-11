@@ -21,12 +21,11 @@ namespace StudentRegistrationApplication
             string program = comboBox4.SelectedItem?.ToString() ?? "Not selected";
 
             
-            ShowStudentInfo(firstName, middleName, lastName, gender, dateOfBirth, program); 
-            ShowStudentInfo(firstName, lastName, gender); 
-            ShowStudentInfo(firstName, lastName); 
+            ShowStudentInfo(firstName, middleName, lastName, gender, dateOfBirth, program);
+            ShowStudentInfo(firstName, middleName, lastName, program); 
+            ShowStudentInfo(firstName, lastName, program); 
         }
-
-        private void backgound_Load(object sender, EventArgs e)
+                private void backgound_Load(object sender, EventArgs e)
         {
             ArrayList programs = new ArrayList
             {
@@ -111,18 +110,20 @@ namespace StudentRegistrationApplication
         }
 
       
-        private void ShowStudentInfo(string firstName, string lastName, string gender)
+        private void ShowStudentInfo(string firstName, string lastName, string middleName, string program)
         {
             string message =
-                $"Student name: {firstName} {lastName}\n" +
-                $"Gender: {gender}";
+                $"Student name: {firstName} {middleName} {lastName} \n" +
+                $"Program: {program}";
             MessageBox.Show(message, "Student Basic Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         
-        private void ShowStudentInfo(string firstName, string lastName)
+        private void ShowStudentInfo(string firstName, string lastName, string program)
         {
-            string message = $"Student name: {firstName} {lastName}";
+            string message = $"Student name: {firstName} {lastName} \n" +
+            $"Program: {program}";
+
             MessageBox.Show(message, "Student Name", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
